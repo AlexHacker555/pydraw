@@ -18,7 +18,7 @@ while running:
             running = False
     btn = pygame.mouse.get_pressed()
     if btn[0]:
-        if not pygame.Rect((x, y, 20, 20)) in squares:
+        if not pygame.Rect((x + 5, y + 5, 20, 20)) in squares:
             squares.append(pygame.Rect(x + 5, y + 5, 20, 20))
     for i in squares:
         pygame.draw.rect(screen, tuple(color), i)
